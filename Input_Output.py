@@ -58,3 +58,39 @@ print('individual character %c , %c'% (list[1],list[0])) #%c to dislpay a single
 string ="abcd"
 print('slice %s'%string[0:2]) #using slicing operator on a string to display required characters
 print('b=%.2f'% b) #the float value is displayed with 2 fraction digits , spcified after point
+
+#Input Statements
+str = input('enter gas fee')
+x=int(str)
+print(x) 
+
+x=int(input('enter a number')) #using int() function before the input() function to accept an integer fromthe keyboard
+
+print(x)
+
+#similarly , to accept a float value
+y=float(input('enter float value'))
+
+print(y)
+
+str=input('enter a sentence') #no need to type cast string here , returns error
+print(str)
+
+#to accept a single character from keyboard
+ch=input('enter a char')
+print("u entered :",ch[0])
+
+#accept two integer from keyboard
+x=int(input("enter number a"))
+y=int(input("enter number b"))
+print("number a is:",x)
+print("number b is :",y)
+print("the numbers are:",x,y)
+print("the numbers are",x,y,sep=',')#to seperate the numbers by ','
+print("the numbers are %d,%d" %(x,y))#perfect !
+
+#to accept two numbers and print their sum
+num1=int(input("enter first number"))
+num2=int(input("enter second number"))
+num3=num1+num2
+print("the sum is %d"%(num3))
