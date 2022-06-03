@@ -1,7 +1,7 @@
 #29/05/2022
 #INPUT / OUTPUT
 
-from tkinter import Variable
+from tkinter import X, Variable
 
 
 print("hello")
@@ -94,3 +94,41 @@ num1=int(input("enter first number"))
 num2=int(input("enter second number"))
 num3=num1+num2
 print("the sum is %d"%(num3))
+
+#to convert numbrs from other systems into decimal number system
+str=input("enter hexa decimal no. :")
+x=int(str,16)
+print("hexadecimal no. entered is",x)
+
+str1=int(input("enter octal nu. :"),8)
+print("octal number entere is :%i"%str1)
+
+str3=input("enter binary number")
+x=int(str3,2)
+print("decimal number entere is :%i"%x)
+
+#to accept more than one input from the same line
+a,b=[int(x)for x in input("enter two numbers:").split()]
+
+#a,b={int(x)for x in input("enter again two numbers").split()}
+
+var1,var2,var3=[int(x)for x in input("enter the three numbers").split()] # split necessary 
+#to acept three integers using ',' and find their sum
+x,y,z =[int(x)for x in input("enter numbers for sum").split(',')]
+sum=x+y+z
+print(sum , "is the answer")
+
+#To accept groupof strings seperated by , ',' .
+list=[x for x in input("enter the string groups").split(',')]
+print("you entered :",list)
+
+#COMMAND LINE ARGUMENTS:
+#these are the values passed to the python program at the command prompt
+#they are passed to the program from outside the program
+#arguments entered via keyboard , seperated by SPACE.
+
+#these arguments are stored in the form of strings ...by default
+#stored in a list with the name 'argv' , which is available in sys-module.
+#argv[0] represents the name of the program.
+#argv[1] represents the first value ..and so on...
+#to find number of command line arguments entered at command prompt ..use function - len() , as len(argv)
